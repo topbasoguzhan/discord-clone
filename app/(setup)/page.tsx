@@ -9,7 +9,7 @@ export default async function SetupPage() {
   const server = await getFirstServerByProfileId(profile.id);
 
   if (server) {
-    return redirect(`/servers/${server.id}`);
+    return redirect(`/servers/${server.id}`)
   }
 
   return <InitialModel />;
